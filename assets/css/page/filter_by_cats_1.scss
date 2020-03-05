@@ -1,0 +1,34 @@
+.filter_by_categories_1{
+    margin-bottom: 40px;
+    .filter_by_categories_1_heading{
+        padding: 10px 0;
+        span{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+    .filter_by_categories_items_list{
+        margin: 0;
+        padding: 0px 15px;
+        border: 1px solid #ccc;
+        .filter_by_categories_item{
+            list-style: none;
+            padding: 8px 0px;
+            border-bottom: 1px solid #ccc;
+            a{
+                color: $main_text;
+                text-decoration: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+                i{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

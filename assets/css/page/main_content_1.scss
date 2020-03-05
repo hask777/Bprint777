@@ -1,0 +1,198 @@
+.main_1_content_section{
+    .main_1_content_heading{
+        padding: 10px 0;
+        span{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+    .main_1_content_header{
+        background-color: #e5e5e5;
+        margin-bottom: 20px;
+        padding: 5px 15px;
+
+        .main_1_content_header_swithers{
+            a{
+                text-decoration: none;
+                color: $main_text;
+            }
+            .main_1_content_header_swithers_columns{
+                padding: 0 5px;
+                i{
+                    font-size: 12px;
+                }
+            }
+            .main_1_content_header_swithers_rows{
+                padding: 0 5px;
+                i{
+                    font-size: 12px;
+                }
+            }
+            .main_1_content_header_select{
+                padding: 0 30px;
+                label{
+                    font-size: 12px;
+                    margin: 0;
+                }
+                select{
+                    font-size: 12px;
+                }
+            }
+        }
+        .main_1_content_header_pagination{
+            padding: 0 5px;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+    .top_hits_1_items_col{
+        margin: 20px 0px;
+        padding: 0;
+        .top_hits_2_item_col{
+            list-style: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 1px solid #fff;
+            // border: 1px solid #ccc;
+            a{
+                text-decoration: none;
+                .top_hits_2_item_img_col{
+                    width: 100%;
+                    height: 210px;
+                    position: relative;
+                    padding-top: 30px;
+                    // border: 1px solid #ccc;
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        max-height: 180px;
+                    }
+
+                }
+                .top_hits_2_item_content_col{
+                    width: 100%;
+                    padding: 10px 10px;
+                    h2{
+                        margin: 0;
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color:#343434;
+                    }
+                    p{
+                        margin: 0;
+                        padding: 10px 0px;;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        color: #c5c5c5;
+                        font-size: 12px;
+                    }
+                    .top_hits_1_item_content_price_old_col{
+                        color: #c5c5c5;
+                        font-size: 12px;
+                    }
+                    .top_hits_1_item_content_price_col{
+                        margin-left: 10px;
+                        color: #39ace5;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+                .top_hits_1_item_sale_col{
+                    position: absolute;
+                    z-index: 9997;
+                    background-color: #eeb301;
+                    color: #ffffff;
+                    padding: 4px 15px;
+                    font-size: 10px;
+                }
+            }
+            &:hover{
+                border: 1px solid #ccc;
+            }
+        }
+    }
+    .top_hits_1_items_row{
+        margin: 20px 0px;
+        padding: 0;
+        .top_hits_2_item_row{
+            width: 100%;
+            list-style: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 1px solid #fff;
+            // border: 1px solid #ccc;
+            a{
+                text-decoration: none;
+                padding: 0px 10px;
+                .top_hits_2_item_img_row{
+                    width: 30%;
+                    height: 210px;
+                    position: relative;
+                    padding-top: 30px;
+                    // border: 1px solid #ccc;
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        max-height: 180px;
+                    }
+                }
+                .top_hits_2_item_content_row{
+                    width: 70%;
+                    padding: 10px 10px;
+                    h2{
+                        margin: 0;
+                        // text-align: center;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color:#343434;
+                    }
+                    p{
+                        margin: 10px 0;
+                        // padding: 10px 0px;;
+                        display: inline-block;
+                        width: 100%;
+                        color: $main_text;
+                        font-size: 12px;
+                    }
+                    .top_hits_1_item_content_price_old_row{
+                        color: #c5c5c5;
+                        font-size: 12px;
+                    }
+                    .top_hits_1_item_content_price_row{
+                        margin-left: 10px;
+                        color: #39ace5;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    .top_hits_1_item_content_row_button{
+                        padding: 8px 20px;
+                        font-size: 12px;
+                        background-color: $main_blue;
+                        color:#fff;
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .top_hits_1_item_sale_row{
+                    position: absolute;
+                    z-index: 9997;
+                    background-color: #eeb301;
+                    color: #ffffff;
+                    padding: 4px 15px;
+                    font-size: 10px;
+                }
+            }
+            &:hover{
+                border: 1px solid #ccc;
+            }
+        }
+    }
+}

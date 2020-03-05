@@ -1,0 +1,14 @@
+@media screen and (max-width: 1200px) {
+    .header_1_nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header_1_mobile_nav{
+        display: none;
+    }
+    .left_side_menu_1{
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+.top_image_1_section{
+    .wrapper{
+        padding: 0px 15px;
+        .col-md-12{
+            padding: 0;
+            position: relative;
+        }
+        .top_image_1_image{
+            width: 100%;
+            height: 150px;
+            background-image: url('assets/img/print_1.png');
+            background-repeat: no-repeat;
+        }
+        .top_image_1_bgc{
+            position: absolute;
+            width: 100%;
+            height: 150px;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            opacity: 0.5;
+            .top_image_1_bgc_heading{
+                position: absolute;
+                color:#fff;
+                font-size: 32px;
+            }
+        }
+    }
+}

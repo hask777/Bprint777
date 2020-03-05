@@ -1,0 +1,50 @@
+.best_seller_1{
+    .best_seller_1_heading{
+        padding: 10px 0;
+        span{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+    .best_seller_1_items{
+        margin: 0;
+        .best_seller_1_item{
+            list-style: none;
+            border: 1px solid #fff;
+            a{
+                text-decoration: none;
+                position: relative;
+                .best_seller_1_item_img{
+                    width: 30%;
+                    padding: 10px 0px;
+                    img{
+                        max-height: 150px;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                    }
+
+                }
+                .best_seller_1_item_content{
+                    width: 70%;
+                    padding: 10px 10px;
+                    h2{
+                        font-size: 12px;
+                        margin: 0;
+                        font-weight: bold;
+                        color:#343434;
+                    }
+                    .best_seller_1_item_content_price_old{
+                        color: #c5c5c5;
+                        font-size: 12px;
+                    }
+                    .best_seller_1_item_content_price{
+                        margin-left: 10px;
+                        color: #39ace5;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

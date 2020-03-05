@@ -1,0 +1,41 @@
+.prefirance_1_section{
+    color:#fff;
+    position: relative;
+    background-image: url('assets/img/print_1.png');
+    background-repeat: no-repeat;
+    .prefirance_1_section_bgc{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background-color: #000;
+    }
+    .prefirance_1_items{
+        .prefirance_1_item{
+            .prefirance_1_items_icon{
+                width: 20%;
+                position: relative;
+                display: block;
+                padding: 10px;
+                i{
+                    position: absolute;
+                    left: 50%;
+                    font-size: 40px;
+                    color: #39ace5;
+                }
+            }
+            .prefirance_1_items_content{
+                width: 80%;
+                padding: 10px;
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}

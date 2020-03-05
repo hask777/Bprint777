@@ -1,0 +1,16 @@
+.breadcrumbs_1_section{
+    .wrapper{
+        padding: 20px 15px;
+    }
+    .breadcrumbs_parent{
+        font-size: 12px;
+    }
+    .breadcrumbs_arrow{
+        font-size: 12px;
+        margin: 0px 5px;
+    }
+    .breadcrumbs_current{
+        font-size: 12px;
+        color: $main_blue;
+    }
+}
