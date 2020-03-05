@@ -23,14 +23,14 @@ class WalkerNav extends Walker_Nav_Menu
         $submenu = ($depth > 0) ? ' sub-menu' : '';
         $output .= "\n$indent<ul class=\"dropdown-menu$submenu depth_$depth\" >\n";
 
-        if($this->megaMenuID !=0){
+        if($this->megaMenuID !=0 && $depth == 0){
             $output .= "<li class=\"megamenu-column\"><ul>\n";
         }
     }
 
     public function end_lvl(&$output, $depth = 0, $args = array())
     {
-        if($this->megaMenuID != 0){
+        if($this->megaMenuID != 0 && $depth == 0){
             $output .= "</ul></li>";
         }
 
@@ -41,25 +41,30 @@ class WalkerNav extends Walker_Nav_Menu
     {
 
 
-        if($this->megaMenuID != 0 && $this->megaMenuID === intval($item->menu_item_parent)) {
-
-            $this->count++;
-
-            if($this->count > 2){
-                $output .= "</ul></li><li class=\"megamenu-column\"><ul>\n";
-                $this->count = 1;
-            }
-
-        }else{
-            $this->megaMenuID = 0;
-        }
-
         $indent = ($depth) ? str_repeat("\t", $depth) : '';
 
         $li_attributes = '';
         $class_names = $value = '';
 
         $classes = empty($item->classes) ? array() : (array) $item->classes;
+
+        if($this->megaMenuID != 0 && $this->megaMenuID != intval($item->menu_item_parent) && $depth == 0) {
+
+            // $this->count++;
+            //
+            // if($this->count > 2){
+            //     $output .= "</ul></li><li class=\"megamenu-column\"><ul>\n";
+            //     $this->count = 1;
+            // }
+
+            $this->megaMenuID = 0;
+        }
+
+        $column_divider = array_search('column-divider', $classes);
+            if($column_divider !== false){
+                $output .= "</ul></li><li class=\"megamenu-column\"><ul>\n";
+            }
+
         // managing divider: add divider class to an element to get a divider before it.
         $divider_class_position = array_search('divider', $classes);
         if ($divider_class_position !== false) {

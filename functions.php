@@ -28,6 +28,11 @@ if( 'disable_gutenberg' ){
   */
 require get_template_directory() . '/inc/gutenberg-init.php';
 
+/**
+ * Off or On guttenberg.
+ */
+require get_template_directory() . '/inc/menu/menu-item-admin.php';
+
  /**
   * Admin functions.
   */

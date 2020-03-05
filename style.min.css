@@ -137,7 +137,7 @@ body{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;colo
 .header_1 .header_1_nav .main_menu li a{display:inline-block;padding:25px 0;text-decoration:none;color:#fff;font-size:14px}
 .header_1 .header_1_nav .main_menu li:hover .dropdown-menu{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;border:0;border-radius:0}
 .header_1 .header_1_nav .main_menu li:hover .dropdown-menu li a{color:#111a23}
-.header_1 .header_1_nav .main_menu .megamenu{position:static}
+.header_1 .header_1_nav .main_menu .megamenu{position:static;z-index:9999}
 .header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu{display:block;min-width:280px;max-width:100%;margin:0;border:0;border-radius:0}
 .header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column{margin:0;padding:10px 0;width:280px;display:block;float:left}
 .header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column:not(:first-child):after{position:absolute;top:0;display:block;content:'';width:1px;background-color:#eee;height:100%}
