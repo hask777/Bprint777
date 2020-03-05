@@ -138,8 +138,16 @@ body{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;colo
 .header_1 .header_1_nav .main_menu li:hover .dropdown-menu{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;border:0;border-radius:0}
 .header_1 .header_1_nav .main_menu li:hover .dropdown-menu li a{color:#111a23}
 .header_1 .header_1_nav .main_menu .megamenu{position:static}
-.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu{display:block;width:100%;margin:0;border:0;border-radius:0}
-.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu li a{color:#111a23}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu{display:block;min-width:280px;max-width:100%;margin:0;border:0;border-radius:0}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column{width:280px;display:block;float:left}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column ul{padding:0;margin:0}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column ul li a{color:#39ace5;font-size:13px;font-weight:bold;padding:4px 20px;display:block}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column ul li a:hover,.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column ul li a:focus{background-color:#39ace5;color:#fff}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column ul li span.sub{color:#111a23;font-size:11px;line-height:1.4em;margin-top:-4px;padding:2px 20px;display:block}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column ul li .featured-image a{font-size:14px;color:#2e7dd9;font-weight:600}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column ul li .description{padding:3px 0}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column ul li .description a{display:none}
+.header_1 .header_1_nav .main_menu .megamenu:hover .dropdown-menu .megamenu-column ul .divider{margin:16px 20px 10px;max-width:60px;width:100%;height:1px;background-color:#eee}
 .header_1 .header_1_right_side{padding:15px 10px;font-size:12px}
 .header_1 .header_1_right_side .auth{margin-right:20px;padding:10px}
 .header_1 .header_1_right_side .auth i{margin-right:5px}
