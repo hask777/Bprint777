@@ -71,8 +71,6 @@ class WalkerNav extends Walker_Nav_Menu
             $this->megaMenuID = $item->ID;
         }
 
-
-
         $classes[] = ($args->has_children) ? 'dropdown' : '';
         $classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';
         $classes[] = 'menu-item-'.$item->ID;
@@ -96,6 +94,15 @@ class WalkerNav extends Walker_Nav_Menu
 
         $item_output = $args->before;
         $item_output .= '<a'.$attributes.'>';
+
+        // Check if item has featured image
+
+        $has_featured_image = array_search('featured-image', $classes);
+        if ($has_featured_image !== false) {
+            $postID = url_to_postid( $item->url );
+            $item_output .= '<img alt="'.esc_attr($item->attr_title).'" src="'.get_the_post_thumbnail_url( $postID ).'">';
+        }
+
         $item_output .= $args->link_before.apply_filters('the_title', $item->title, $item->ID).$args->link_after;
 
             // add support for menu item title
